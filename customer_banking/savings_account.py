@@ -22,7 +22,7 @@ def create_savings_account(balance, interest_rate, months):
 
     # Calculate interest earned
      # ADD YOUR CODE HERE
-    interest_earned = (account.balance * account.interest * months )/ 12
+    interest_earned = account.balance * (account.interest/100 * months / 12)
     
     # Update the savings account balance by adding the interest earned
     # ADD YOUR CODE HERE
@@ -34,8 +34,7 @@ def create_savings_account(balance, interest_rate, months):
     # ADD YOUR CODE HERE
     account.set_interest(interest_earned)
     # Return the updated balance and interest earned.
-    return  # ADD YOUR CODE HERE
-    updated_balance, interest_earned
+    return  updated_balance, interest_earned
 
  
 
